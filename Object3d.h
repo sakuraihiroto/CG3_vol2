@@ -79,6 +79,8 @@ public: // 静的メンバ関数
 	/// <returns></returns>
 	static Object3d* Create();
 
+	const XMFLOAT3& GetRotation() { return rotation; }
+
 private: // 静的メンバ変数
 	// デバイス
 	static ID3D12Device* device;
